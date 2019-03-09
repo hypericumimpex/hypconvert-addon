@@ -88,6 +88,12 @@ final class ConvertPlugServices {
 			'class' => 'CPRO_Service_Drip',
 			'url'   => 'https://www.getdrip.com/user/edit',
 		),
+		'elasticemail'        => array(
+			'type'  => 'autoresponder',
+			'name'  => 'ElasticEmail',
+			'class' => 'CPRO_Service_ElasticEmail',
+			'url'   => 'https://elasticemail.com/account/#/settings/apiconfiguration',
+		),
 		'getresponse'      => array(
 			'type'  => 'autoresponder',
 			'name'  => 'GetResponse',

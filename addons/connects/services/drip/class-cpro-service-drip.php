@@ -410,6 +410,10 @@ final class CPRO_Service_Drip extends CPRO_Service {
 			} else {
 				$member['campaign_id'] = $list_campaign;
 				$res                   = $drip->subscribe_subscriber( $member );
+				if( empty( $res ) )
+				{
+					$res = $drip->create_or_update_subscriber( $member );
+				}
 			}
 			$info = $drip->get_request_info();
 			if ( isset( $info['http_code'] ) && 201 !== $info['http_code'] && 200 !== $info['http_code'] && 422 !== $info['http_code'] ) {

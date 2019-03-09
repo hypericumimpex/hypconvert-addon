@@ -1,14 +1,14 @@
-# Copyright (C) 2018 Brainstorm Force
+# Copyright (C) 2019 Brainstorm Force
 # This file is distributed under the same license as the Convert Pro - Addon package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Convert Pro - Addon 1.1.6\n"
+"Project-Id-Version: Convert Pro - Addon 1.1.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/convertpro-addon\n"
-"POT-Creation-Date: 2018-12-24 07:13:49+00:00\n"
+"POT-Creation-Date: 2019-03-04 07:08:09+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
@@ -545,28 +545,28 @@ msgstr ""
 msgid "Remove Google Analytics Integration"
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:433
+#: addons/connects/classes/class-convertplugservices.php:439
 msgid "Integration Name should not be blank."
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:463
+#: addons/connects/classes/class-convertplugservices.php:469
 msgid "Provide a name for this integration"
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:517
+#: addons/connects/classes/class-convertplugservices.php:523
 msgid "You have not added an account yet. Please add a new account."
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:528
+#: addons/connects/classes/class-convertplugservices.php:534
 msgid "Select Integration"
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:539
-#: addons/connects/classes/class-convertplugservices.php:543
+#: addons/connects/classes/class-convertplugservices.php:545
+#: addons/connects/classes/class-convertplugservices.php:549
 msgid "You have not added a account yet. Please add a new account."
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:581
+#: addons/connects/classes/class-convertplugservices.php:587
 #: addons/connects/services/activecampaign/class-cpro-service-activecampaign.php:272
 #: addons/connects/services/activecampaign/class-cpro-service-activecampaign.php:310
 #: addons/connects/services/aweber/class-cpro-service-aweber.php:210
@@ -581,6 +581,7 @@ msgstr ""
 #: addons/connects/services/convertkit/class-cpro-service-convertkit.php:255
 #: addons/connects/services/drip/class-cpro-service-drip.php:206
 #: addons/connects/services/drip/class-cpro-service-drip.php:263
+#: addons/connects/services/elasticemail/class-cpro-service-elasticemail.php:208
 #: addons/connects/services/getresponse/class-cpro-service-getresponse.php:180
 #: addons/connects/services/hubspot/class-cpro-service-hubspot.php:174
 #: addons/connects/services/icontact/class-cpro-service-icontact.php:242
@@ -606,20 +607,20 @@ msgstr ""
 msgid "Choose..."
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:589
+#: addons/connects/classes/class-convertplugservices.php:595
 msgid "Add Integration..."
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:597
+#: addons/connects/classes/class-convertplugservices.php:603
 msgid "Existing Integration"
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:853
-#: addons/connects/classes/class-convertplugservices.php:1006
+#: addons/connects/classes/class-convertplugservices.php:859
+#: addons/connects/classes/class-convertplugservices.php:1012
 msgid "You are not connected to any service."
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:937
+#: addons/connects/classes/class-convertplugservices.php:943
 #: addons/connects/classes/class-cp-v2-services-loader.php:108
 #. translators: %s Error Message
 #. translators: %s Product name
@@ -628,7 +629,7 @@ msgid ""
 "configuration error"
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:1103
+#: addons/connects/classes/class-convertplugservices.php:1109
 msgid "Wrong Style ID. Please check with admin."
 msgstr ""
 
@@ -842,6 +843,7 @@ msgstr ""
 #: addons/connects/services/convertkit/class-cpro-service-convertkit.php:134
 #: addons/connects/services/customerio/class-cpro-service-customerio.php:108
 #: addons/connects/services/drip/class-cpro-service-drip.php:125
+#: addons/connects/services/elasticemail/class-cpro-service-elasticemail.php:124
 #: addons/connects/services/getresponse/class-cpro-service-getresponse.php:115
 #: addons/connects/services/hubspot/class-cpro-service-hubspot.php:99
 #: addons/connects/services/infusionsoft/class-cpro-service-infusionsoft.php:209
@@ -930,6 +932,7 @@ msgid ""
 msgstr ""
 
 #: addons/connects/services/aweber/class-cpro-service-aweber.php:228
+#: addons/connects/services/elasticemail/class-cpro-service-elasticemail.php:226
 #: addons/connects/services/getresponse/class-cpro-service-getresponse.php:196
 #: addons/connects/services/klaviyo/class-cpro-service-klaviyo.php:218
 #: addons/connects/services/madmimi/class-cpro-service-madmimi.php:214
@@ -978,6 +981,7 @@ msgstr ""
 #: addons/connects/services/campayn/class-cpro-service-campayn.php:116
 #: addons/connects/services/constant-contact/class-cpro-service-constant-contact.php:61
 #: addons/connects/services/customerio/class-cpro-service-customerio.php:73
+#: addons/connects/services/elasticemail/class-cpro-service-elasticemail.php:85
 #: addons/connects/services/getresponse/class-cpro-service-getresponse.php:83
 #: addons/connects/services/hubspot/class-cpro-service-hubspot.php:64
 #: addons/connects/services/infusionsoft/class-cpro-service-infusionsoft.php:170
@@ -1243,8 +1247,39 @@ msgstr ""
 msgid "There was an error subscribing to Drip! The account is no longer connected."
 msgstr ""
 
-#: addons/connects/services/drip/class-cpro-service-drip.php:416
+#: addons/connects/services/drip/class-cpro-service-drip.php:420
 msgid "There was an error subscribing to Drip!"
+msgstr ""
+
+#: addons/connects/services/elasticemail/class-cpro-service-elasticemail.php:87
+msgid "Error: You must provide an Public Account ID."
+msgstr ""
+
+#: addons/connects/services/elasticemail/class-cpro-service-elasticemail.php:125
+msgid ""
+"Your API key can be found in your Elastic Email account under Settings > "
+"API."
+msgstr ""
+
+#: addons/connects/services/elasticemail/class-cpro-service-elasticemail.php:133
+msgid "Public Account ID"
+msgstr ""
+
+#: addons/connects/services/elasticemail/class-cpro-service-elasticemail.php:134
+msgid ""
+"Your Account ID can be found in your AElastic Email account under Settings "
+"> API."
+msgstr ""
+
+#: addons/connects/services/elasticemail/class-cpro-service-elasticemail.php:264
+msgid ""
+"There was an error subscribing to Elastic Email! The account is no longer "
+"connected."
+msgstr ""
+
+#: addons/connects/services/elasticemail/class-cpro-service-elasticemail.php:358
+#. translators: %s Error Message
+msgid "There was an error subscribing to ElasticEMail! %s"
 msgstr ""
 
 #: addons/connects/services/getresponse/class-cpro-service-getresponse.php:116
@@ -2129,22 +2164,22 @@ msgstr ""
 msgid "http://www.brainstormforce.com"
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:357
+#: addons/connects/classes/class-convertplugservices.php:363
 msgctxt "Third party service such as MailChimp."
 msgid "Error: Missing service type."
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:359
+#: addons/connects/classes/class-convertplugservices.php:365
 msgctxt "Connection data such as an API key."
 msgid "Error: Missing service data."
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:361
+#: addons/connects/classes/class-convertplugservices.php:367
 msgctxt "Integration name for a third party service such as MailChimp."
 msgid "Error: Please enter a valid integration name."
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:370
+#: addons/connects/classes/class-convertplugservices.php:376
 msgctxt "Integration name for a third party service such as MailChimp."
 msgid ""
 "Hey, looks like you already have an account with the same name. Please use "

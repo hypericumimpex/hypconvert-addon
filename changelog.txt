@@ -1,3 +1,8 @@
+Version 1.1.7 March 04, 2019
+
+- New: ElasticEmail Integration.
+- Fix: Drip Update the Contact.
+
 Version 1.1.6 Dec 24, 2018
 
 - Improvement: ActiveCampaign IP Sync.
