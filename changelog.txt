@@ -1,3 +1,16 @@
+Version 1.2.0 May 15, 2019
+
+- Fix: Security update with cross-site scripting vulnerability issue.
+
+Version 1.1.9 April 25, 2019
+
+- Fix: Google reCaptcha secret key validation if CTA is connected to any mailer.
+- Fix: Cleverreach List fields and intergroups fields mapping issue.
+
+Version 1.1.8 April 10, 2019
+
+- Fix: Mailchimp Tags.
+
 Version 1.1.7 March 04, 2019
 
 - New: ElasticEmail Integration.

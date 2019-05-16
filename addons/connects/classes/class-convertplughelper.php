@@ -353,6 +353,8 @@ final class ConvertPlugHelper {
 				foreach ( $data as $key => $value ) {
 					if ( 'mailchimp_groups' == $value->name ) {
 						$return_array[ $value->name ][] = $value->value;
+					} elseif ( 'mailchimp_segments' == $value->name ) {
+						$return_array[ $value->name ][] = $value->value;
 					} else {
 						$return_array[ $value->name ] = $value->value;
 					}

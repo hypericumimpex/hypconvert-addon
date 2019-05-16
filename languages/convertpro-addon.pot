@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Convert Pro - Addon package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Convert Pro - Addon 1.1.7\n"
+"Project-Id-Version: Convert Pro - Addon 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/convertpro-addon\n"
-"POT-Creation-Date: 2019-03-04 07:08:09+00:00\n"
+"POT-Creation-Date: 2019-05-15 13:49:39+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -615,12 +615,12 @@ msgstr ""
 msgid "Existing Integration"
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:859
-#: addons/connects/classes/class-convertplugservices.php:1012
+#: addons/connects/classes/class-convertplugservices.php:883
+#: addons/connects/classes/class-convertplugservices.php:1036
 msgid "You are not connected to any service."
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:943
+#: addons/connects/classes/class-convertplugservices.php:967
 #: addons/connects/classes/class-cp-v2-services-loader.php:108
 #. translators: %s Error Message
 #. translators: %s Product name
@@ -629,7 +629,7 @@ msgid ""
 "configuration error"
 msgstr ""
 
-#: addons/connects/classes/class-convertplugservices.php:1109
+#: addons/connects/classes/class-convertplugservices.php:1133
 msgid "Wrong Style ID. Please check with admin."
 msgstr ""
 
@@ -1060,7 +1060,7 @@ msgid ""
 msgstr ""
 
 #: addons/connects/services/clever-reach/class-cpro-service-clever-reach.php:132
-#: addons/connects/services/clever-reach/class-cpro-service-clever-reach.php:459
+#: addons/connects/services/clever-reach/class-cpro-service-clever-reach.php:460
 msgid "Sorry! We could not connect to the CleverReach API."
 msgstr ""
 
@@ -1098,9 +1098,9 @@ msgstr ""
 msgid "Please choose list..."
 msgstr ""
 
-#: addons/connects/services/clever-reach/class-cpro-service-clever-reach.php:445
-#: addons/connects/services/clever-reach/class-cpro-service-clever-reach.php:448
-#: addons/connects/services/clever-reach/class-cpro-service-clever-reach.php:454
+#: addons/connects/services/clever-reach/class-cpro-service-clever-reach.php:446
+#: addons/connects/services/clever-reach/class-cpro-service-clever-reach.php:449
+#: addons/connects/services/clever-reach/class-cpro-service-clever-reach.php:455
 #: addons/connects/services/mailpoet/class-cpro-service-mailpoet.php:400
 #: addons/connects/services/mailwizz/class-cpro-service-mailwizz.php:343
 #: addons/connects/services/mymail/class-cpro-service-mymail.php:242

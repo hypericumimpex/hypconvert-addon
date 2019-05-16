@@ -418,7 +418,8 @@ final class CPRO_Service_Clever_Reach extends CPRO_Service {
 				'registered' => time(),
 				'activated'  => $time,
 				'source'     => $source,
-				$attribute   => $user_data,
+				'attributes' => $user_data,
+				'global_attributes' => $user_data,
 			);
 
 			$response['checkbox'] = $settings['cleverreach_double_optin'];

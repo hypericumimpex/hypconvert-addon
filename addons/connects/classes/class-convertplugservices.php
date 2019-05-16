@@ -739,7 +739,7 @@ final class ConvertPlugServices {
 
 		check_ajax_referer( 'cp_add_subscriber_nonce', '_nonce' );
 
-		$style_id = isset( $_POST['style_id'] ) ? esc_attr( $_POST['style_id'] ) : '';
+		$style_id = isset( $_POST['style_id'] ) ? sanitize_text_field( esc_attr( $_POST['style_id'] ) ) : '';
 
 		$response = array(
 			'error'      => false,
@@ -768,6 +768,28 @@ final class ConvertPlugServices {
 		} else {
 			$can_user_see_errors = false;
 		}
+		// Google recaptcha secret key verification starts.
+		$cp_google_recaptcha_verify = isset( $_POST['cp_google_recaptcha_verify'] ) ? 0 : 1;
+
+		if ( ! $cp_google_recaptcha_verify ) {
+
+			$google_recaptcha = isset( $_POST['g-recaptcha-response'] ) && 1 ? $_POST['g-recaptcha-response'] : '';
+
+			$google_recaptcha_secret_key = get_option( 'cp_google_recaptcha_secret_key' );
+
+			// calling google recaptcha api.
+			$google_response = file_get_contents( 'https://www.google.com/recaptcha/api/siteverify?secret=' . $google_recaptcha_secret_key . '&response=' . $google_recaptcha . '&remoteip=' . $_SERVER['REMOTE_ADDR'] );
+			// validating result.
+			$decode_google_response = json_decode( $google_response );
+
+			if ( false === $decode_google_response->success ) {
+				$response['error'] = true;
+				wp_send_json_error( $response );
+			} else {
+				$response['error'] = false;
+			}
+		}
+		// Google recaptcha secret key verification ends.
 
 		$post_data = ConvertPlugHelper::get_post_data();
 
@@ -834,6 +856,8 @@ final class ConvertPlugServices {
 							$settings['ontraport_tags'][] = $t->value;
 						} elseif ( 'mailchimp' == $mailer[ CP_API_CONNECTION_SERVICE ][0] && 'mailchimp_groups' == $t->name ) {
 							$settings['mailchimp_groups'][] = $t->value;
+						} elseif ( 'mailchimp' == $mailer[ CP_API_CONNECTION_SERVICE ][0] && 'mailchimp_segments' == $t->name ) {
+								$settings['mailchimp_segments'][] = $t->value;
 						} elseif ( 'mautic' == $mailer[ CP_API_CONNECTION_SERVICE ][0] && 'mautic_segment' == $t->name ) {
 							$settings['mautic_segment'][] = $t->value;
 						} elseif ( 'sendlane' == $mailer[ CP_API_CONNECTION_SERVICE ][0] && 'sendlane_tags' == $t->name ) {

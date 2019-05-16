@@ -202,7 +202,32 @@ class CPRO_Mailchimp {
 
         $req_url = $this->root . 'lists/' . $list . '/members/' . md5( $email );
         $result = wp_remote_post( $req_url, $opts );
-        
+
+        /* MailChimp Tags section start. */
+        $tags_list = $this->getSegments( $list );
+        if( !empty( $tags_list['segments'] ) && isset( $tags_list['segments'] ) ){
+
+            $length = count( $tags_list['segments'] );
+            $tags_option = array();
+            for ( $i = 0; $i < $length ; $i++) {
+                $tags_option[$i] = array( 'name' => $tags_list['segments'][$i]->name, 'status' => 'active' );
+            }
+
+            $data['tags'] = $tags_option;
+
+            $opts_tags = array(
+                'headers' => array(
+                    'Content-Type' => 'application/json',
+                    'Authorization' => 'apikey ' . $this->apikey
+                ),
+                'body' => json_encode( $data ),
+                'method' => 'POST'
+            );
+
+            $req_url_tags = $this->root . 'lists/' . $list . '/members/' . md5( $email ) .'/tags';
+            $result_tags = wp_remote_post( $req_url_tags, $opts_tags );
+        }
+        /* MailChimp Tags section end. */
         if( ! is_wp_error( $result ) ) {
             $response_arr = json_decode( $result['body'] );
 

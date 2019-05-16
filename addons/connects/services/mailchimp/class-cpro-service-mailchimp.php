@@ -347,7 +347,7 @@ final class CPRO_Service_MailChimp extends CPRO_Service {
 		ConvertPlugHelper::render_input_html(
 			'mailchimp_segments', array(
 				'class'   => '',
-				'type'    => 'select',
+				'type'    => 'multi-select',
 				'label'   => __( 'Select a Segment', 'convertpro-addon' ),
 				'help'    => '',
 				'default' => $default,
